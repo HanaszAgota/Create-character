@@ -8,7 +8,9 @@
     <script src="script.js" defer></script>
 </head>
 <body>
+
     <h1>Create a Character</h1>
+
     <form>
       <label for="name">Name:</label>
       <input type="text" id="name" name="name"><br>
@@ -23,15 +25,15 @@
       <label for="race">Race:</label>
       <select id="race" name="race">
         <option value="human">Human</option>
-        <option value="elf">Elf</option>
-        <option value="dwarf">Dwarf</option>
+        <option value="elf">Fairy Tale Character</option>
+        <option value="dwarf">Nonbinary</option>
       </select><br>
 
       <label for="class">Class:</label>
       <select id="class" name="class">
-        <option value="fighter">Fighter</option>
-        <option value="rogue">Rogue</option>
-        <option value="mage">Mage</option>
+        <option value="fighter">Funny</option>
+        <option value="rogue">Melancholic</option>
+        <option value="mage">Happy</option>
       </select><br>
 
       <input type="submit" value="Create Character">
@@ -41,9 +43,24 @@
             <h2>Character Sheet</h2>
             <ul>
               <li>Name: <span id="cs-name"></span></li>
+              <li>Gender: <span id="cs-gender"></span></li>
               <li>Race: <span id="cs-race"></span></li>
               <li>Class: <span id="cs-class"></span></li>
             </ul>
           </div>
+          
+          <!-- <div>
+            <a href="#">Useless Link</a>
+            <ul>
+              <li>
+                <a href="#">Dropdown Link</a>
+                <ul>
+                  <li><a href="#">Link 1</a></li>
+                  <li><a href="#">Link 2</a></li>
+                  <li><a href="#">Link 3</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div> -->
     </body>
 </html>
