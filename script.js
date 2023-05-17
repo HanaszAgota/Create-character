@@ -45,7 +45,7 @@ function getClassIcon(charClass) {
         case 'funny':
             return '/pictures/funny.png';
         case 'sad':
-            return '/pictures/sad.png'
+            return '/pictures/sad.png';
         default:
             return '/pictures/unknown.png';
     }

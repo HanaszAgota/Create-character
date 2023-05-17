@@ -2,11 +2,21 @@
   margin-top: 20px;
   display: flex;
   align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 
 .character-sheet img {
-  height: 50px;
-  margin-right: 10px;
+  height: 80px;
+  margin-right: 50px;
+}
+
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 20px;
 }
 
 .character-sheet p {

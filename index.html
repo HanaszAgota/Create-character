@@ -10,7 +10,8 @@
 </head>
 <body>
 <div id="root">
-  <form>
+  
+    <form>
     <label for="name">Name:</label>
     <input type="text" id="name" oninput="updateCharacterSheet()">
 
@@ -34,11 +35,12 @@
         <option value="happy">Happy</option>
         <option value="melancolic">Melancolis</option>
         <option value="funny">Funny</option>
-        <option value="sad">Funny</option>
+        <option value="sad">Sad</option>
     </select>
 </form>
 
 <div class="character-sheet">
+    <p>Name: <span id="char-name"></span></p>
     <img id="char-gender" src="unknown.png" alt="Gender Icon">
     <img id="char-race" src="unknown.png" alt="Race Icon">
     <img id="char-class" src="unknown.png" alt="Class Icon">
