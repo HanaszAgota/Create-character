@@ -1,27 +1,21 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.character-sheet {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.character-sheet img {
+  height: 50px;
+  margin-right: 10px;
+}
+
+.character-sheet p {
+  margin: 0;
 }
 
 body {
-    background-image: url("pictures, logos/wallpaper.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 100px;
-}
-
-
-/* div {background-color: green;}
-div a {
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
-  padding: 15px;
-  display:inline-block;
-}
-ul {
-  display: inline;
-  margin: 0;
+  background-image: url('/pictures/wallpaper.jpg');
+  background-repeat: none;
+  background-position: center;
+  background-size: cover;
 }

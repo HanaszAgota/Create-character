@@ -1,43 +1,52 @@
+function updateCharacterSheet() {
+    const name = document.getElementById('name').value;
+    const gender = document.getElementById('gender').value;
+    const race = document.getElementById('race').value;
+    const charClass = document.getElementById('class').value;
 
-// const csName = document.getElementById('cs-name');
-// const csRace = document.getElementById('cs-race');
-// const csClass = document.getElementById('cs-class');
+    document.getElementById('char-name').textContent = name;
+    document.getElementById('char-gender').src = getGenderIcon(gender);
+    document.getElementById('char-race').src = getRaceIcon(race);
+    document.getElementById('char-class').src = getClassIcon(charClass);
+}
 
-// nameInput.addEventListener('input', updateCharacterSheet);
-// raceSelect.addEventListener('input', updateCharacterSheet);
-// classSelect.addEventListener('input', updateCharacterSheet);
+function getGenderIcon(gender) {
+    switch (gender) {
+        case 'male':
+            return '/pictures/male.png';
+        case 'female':
+            return '/pictures/female.png';
+        default:
+            return '/pictures/unknown.png';
+    }
+}
 
-// function updateCharacterSheet() {
-//   csName.innerText = nameInput.value;
-//   csRace.innerText = raceSelect.options[raceSelect.selectedIndex].text;
-//   csClass.innerText = classSelect.options[classSelect.selectedIndex].text;
-// }
+function getRaceIcon(race) {
+    switch (race) {
+        case 'bear':
+            return '/pictures/winnie.jpeg';
+        case 'pig':
+            return '/pictures/pig.jpeg';
+        case 'tiger':
+            return '/pictures/tiger.jpeg';
+        case 'füles':
+            return '/pictures/füles.png'
+        default:
+            return 'unknown.png';
+    }
+}
 
-//     const root = document.getElementById('root');
-//     const container = document.createElement('div');
-//     container.classList.add('container');
-//     root.append(container);
-//     let sec = document.createElement('section');
-//     sec.classList.add('main');
-//     container.append(sec);
-
-//     document.addEventListener('DOMContentLoaded', function() {
-//     const form = document.querySelector('form');
-//     form.addEventListener('submit', function(event) {
-//     event.preventDefault();
-  
-      
-//       const name = document.getElementById('name').value;
-//       const gender = document.getElementById('gender').value;
-//       const race = document.getElementById('race').value;
-//       const classValue = document.getElementById('class').value;
-  
-//       console.log('Name:', name);
-//       console.log('Gender:', gender);
-//       console.log('Race:', race);
-//       console.log('Class:', classValue);
-      
-//       form.reset();
-//     });
-//   });
-
+function getClassIcon(charClass) {
+    switch (charClass) {
+        case 'happy':
+            return '/pictures/happy.png';
+        case 'melancolic':
+            return '/pictures/melancolic.png';
+        case 'funny':
+            return '/pictures/funny.png';
+        case 'sad':
+            return '/pictures/sad.png'
+        default:
+            return '/pictures/unknown.png';
+    }
+}

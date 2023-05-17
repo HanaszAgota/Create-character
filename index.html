@@ -1,63 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>Document</title>
 </head>
 <body>
-    <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name"><br>
+<div id="root">
+  <form>
+    <label for="name">Name:</label>
+    <input type="text" id="name" oninput="updateCharacterSheet()">
 
-      <label for="gender">Gender:</label>
-      <select id="gender" name="gender">
+    <label for="gender">Gender:</label>
+    <select id="gender" oninput="updateCharacterSheet()">
         <option value="male">Male</option>
         <option value="female">Female</option>
-        <option value="nonbinary">Nonbinary</option>
-      </select><br>
+        <option value="other">Other</option>
+    </select>
 
-      <label for="race">Race:</label>
-      <select id="race" name="race">
-        <option value="human">Human</option>
-        <option value="elf">Fairy Tale Character</option>
-        <option value="dwarf">Nonbinary</option>
-      </select><br>
+    <label for="race">Race:</label>
+    <select id="race" oninput="updateCharacterSheet()">
+        <option value="bear">Bear</option>
+        <option value="pig">Pig</option>
+        <option value="tiger">Tiger</option>
+        <option value="füles">Füles</option>
+    </select>
 
-      <label for="class">Class:</label>
-      <select id="class" name="class">
-        <option value="fighter">Funny</option>
-        <option value="rogue">Melancholic</option>
-        <option value="mage">Happy</option>
-      </select><br>
+    <label for="class">Class:</label>
+    <select id="class" oninput="updateCharacterSheet()">
+        <option value="happy">Happy</option>
+        <option value="melancolic">Melancolis</option>
+        <option value="funny">Funny</option>
+        <option value="sad">Funny</option>
+    </select>
+</form>
 
-      <input type="submit" value="Create Character">
-        </form>
-
-        <div id="character-sheet">
-            <h2>Character Sheet</h2>
-            <ul>
-              <li>Name: <span id="cs-name"></span></li>
-              <li>Gender: <span id="cs-gender"></span></li>
-              <li>Race: <span id="cs-race"></span></li>
-              <li>Class: <span id="cs-class"></span></li>
-            </ul>
-          </div>
-           -->
-          <!-- <div>
-            <a href="#">Useless Link</a>
-            <ul>
-              <li>
-                <a href="#">Dropdown Link</a>
-                <ul>
-                  <li><a href="#">Link 1</a></li>
-                  <li><a href="#">Link 2</a></li>
-                  <li><a href="#">Link 3</a></li>
-                </ul>
-              </li>
-            </ul>
-          </div>
-    </body>
+<div class="character-sheet">
+    <img id="char-gender" src="unknown.png" alt="Gender Icon">
+    <p>Name: <span id="char-name"></span></p>
+    <img id="char-race" src="unknown.png" alt="Race Icon">
+    <img id="char-class" src="unknown.png" alt="Class Icon">
+</div>
+</div>
+</body>
 </html>
