@@ -1,6 +1,3 @@
-// const nameInput = document.getElementById('name');
-// const raceSelect = document.getElementById('race');
-// const classSelect = document.getElementById('class');
 
 // const csName = document.getElementById('cs-name');
 // const csRace = document.getElementById('cs-race');
