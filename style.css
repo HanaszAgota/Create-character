@@ -12,6 +12,7 @@
 }
 
 form {
+  margin-top: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,4 +28,5 @@ body {
   background-image: url('/pictures/wallpaper.jpg');
   background-position: center;
   background-size: cover;
+  height: 30vh;
 }
