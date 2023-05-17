@@ -25,7 +25,6 @@ form {
 
 body {
   background-image: url('/pictures/wallpaper.jpg');
-  background-repeat: none;
   background-position: center;
   background-size: cover;
 }
